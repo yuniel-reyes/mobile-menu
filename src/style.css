@@ -1,0 +1,103 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-columns: 1.8fr 1fr 1.8fr;
+}
+
+#above-div, #bottom-div {
+    background-color: white;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+#left-div {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    position: relative;
+    background-color: white
+}
+
+#right-div {
+    background-color: white;    
+}
+
+main {
+    grid-row-start: 2;
+    grid-column-start: 2;
+    height: 530px; 
+    width: 300px; 
+    margin: 0 auto; 
+    border: 1px solid;
+    display: grid;
+    grid-template-columns: 1fr 60px;
+    grid-template-rows: 50px 1fr;
+}
+
+#hamburger-button {
+    margin-top: 20px;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    grid-column-start: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#spans-containers {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.each-span {
+    height: 3px;
+    width: 33px;
+    background-color: #215732;
+    display: block;
+}
+/* MENU */
+#menu-option-container {
+    position: relative;
+    z-index: revert;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    list-style: none;
+    color: #215732;
+}
+
+li:first-child {
+    position: relative;
+    align-self: flex-end;
+    right: 0px; 
+    font-size: 20px;
+}
+
+li:nth-child(2) {
+    position: relative;
+    align-self: end;
+    left: -19px;
+    font-size: 20px;
+}
+
+li:nth-child(3) {
+    position: relative;
+    align-self: end;
+    left: -41px;
+    font-size: 20px;
+}
+
+.menu-option:hover {
+    cursor: pointer;
+    text-decoration:underline;
+}
+

@@ -7,7 +7,24 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 <body>
-    <div>Hello :)</div>
-    
+    <div id="above-div"></div>
+    <div id="left-div"></div>
+    <main id="mobile-menu"> 
+        <div id="hamburger-button">
+            <div id="spans-containers">
+                <span class="each-span one"></span>
+                <span class="each-span two"></span>
+                <span class="each-span three"></span>
+            </div>
+        </div>
+        <ul id="menu-option-container" style="visibility: hidden;">
+            <li class="menu-option">HOME</li>
+            <li class="menu-option">MENU</li>
+            <li class="menu-option">ABOUT</li>
+        </ul>            
+    </main>
+    <div id="right-div"></div>
+    <div id="bottom-div"></div>
+
 </body>
 </html>

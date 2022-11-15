@@ -1,1 +1,4 @@
-console.log('Works');
+import style from './style.css';
+import MENU from './menu.js';
+
+MENU();
